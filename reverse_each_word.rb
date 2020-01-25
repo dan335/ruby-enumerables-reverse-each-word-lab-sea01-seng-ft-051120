@@ -3,11 +3,11 @@ def reverse_each_word(str)
   first = true
   
   str.split.each do |word|
-    new += word.reverse!
-    
     if !first
       new += " "
     end
+    
+    new += word.reverse!
     
     first = false
   end
